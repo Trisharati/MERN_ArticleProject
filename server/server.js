@@ -21,10 +21,10 @@ app.use('/api',router)
 
 
 
-const dbDriver='mongodb+srv://trisharati:vE9tAJ40v0HkfNxX@cluster0.kkmvasl.mongodb.net/Article'
+
 const port = process.env.PORT || 1900
 
-mongoose.connect(dbDriver,{
+mongoose.connect(process.env.dbDriver,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
