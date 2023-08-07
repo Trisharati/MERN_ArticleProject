@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url='http://localhost:1000/api'
+const url='https://article-project-9y45.onrender.com/api'
 
 export const register=async(input)=> await axios.post(`${url}/userregister`,input)
 .then((res)=>{
