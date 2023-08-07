@@ -181,11 +181,12 @@ const handleClick = (blogid) => {
                   // value={com.text}
                   onChange={handleChange}
                   // ref = {x}
-                  style={{width:'300px'}}
+                  style={{width:'300px',
+                marginBottom:'-10px'}}
                   placeholder='Enter your comment'
                   >
                   </Input>
-                  <Button style={{marginTop:'10px'}}>Post</Button>
+                  <Button style={{marginTop:'20px'}}>Post</Button>
                 </Form> 
 
               </div>
