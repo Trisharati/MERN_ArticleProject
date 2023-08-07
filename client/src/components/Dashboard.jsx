@@ -182,7 +182,8 @@ const handleClick = (blogid) => {
                   onChange={handleChange}
                   // ref = {x}
                   style={{width:'300px',
-                marginBottom:'-10px'}}
+                // marginBottom:'-10px'
+              }}
                   placeholder='Enter your comment'
                   >
                   </Input>
