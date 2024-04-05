@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 export const registration=createAsyncThunk(
     '/getregister',
-    async ({input,navigate})=>{
+    async ({input})=>{
 
         try {
             const response = await register(input)
@@ -14,7 +14,7 @@ export const registration=createAsyncThunk(
             if(response){
               console.log('Registration successful')
               toast.success('Thank you for registration 🙏')
-              navigate('/login')
+              return response
             }
             else{
               console.log('Failed to register')
@@ -30,13 +30,12 @@ export const registration=createAsyncThunk(
 
 export const loginfunc=createAsyncThunk(
     '/getlogin',
-    async ({input,navigate})=>{
+    async ({input})=>{
         try {
             const response = await login(input)
             if(response){
               console.log('Logged in successfully')
               toast.success('Welcome ' + response + '👋')
-              navigate('/dashboard')
             return response
             }
           } catch (error) {

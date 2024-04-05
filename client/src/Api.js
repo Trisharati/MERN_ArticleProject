@@ -8,7 +8,7 @@ export const register=async(input)=> await axios.post(`${url}/userregister`,inpu
     const info = res.data.info
     
     if(info){
-    return info
+    return res
     }
     else{
         console.log('Unable to get info about user')
